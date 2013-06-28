@@ -133,7 +133,7 @@ function showMap() {
     /* HAITI */
 
     getOsmUrl = function (a,b,c) {
-        var url = 'http://tile.openstreetmap.org/' + b + "/" + a.x + "/" + a.y + ".png";
+        var url = 'http://tiles.mapbox.com/v3/landplanner.map-nktu3c9m/' + b + "/" + a.x + "/" + a.y + ".png";
         return url;
     }
     var copycol1 = new GCopyrightCollection("");
@@ -150,7 +150,7 @@ function showMap() {
 
 
     getHaitiUrl = function (a,b,c) {
-        var url = 'http://live.openstreetmap.nl/haiti/' + b + "/" + a.x + "/" + a.y + ".png";
+        var url = 'http://tiles.mapbox.com/v3/landplanner.map-nktu3c9m/' + b + "/" + a.x + "/" + a.y + ".png";
         return url;
     }
     var copycol = new GCopyrightCollection("");
@@ -167,7 +167,7 @@ function showMap() {
 
     // Default view of the world
     gmap.setCenter(
-        new google.maps.LatLng(18.547324589827422, -72.388916015625), 12
+        new google.maps.LatLng(44, -72.5), 9
     );
 
     /* If we have a best-guess for the user's location based on their IP,
